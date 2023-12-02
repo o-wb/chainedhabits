@@ -1,66 +1,11 @@
-## Foundry
+## Chained Habits 🔗
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+Created during ETHGlobal Istanbul, Chained Habits uses Cartesi to track changes to digital documents securely, so far in the form of character count, with the aim of encouraging users to stick to habits that involve digital work such as writing a novel, keeping a digital journal and in the future could be use to track changes made to source code files. 
 
-Foundry consists of:
+Chained Habits is built on the Sepolia chain, allowing users to link their MetaMask wallet and stake ETH when they set a new habit. If they stick to their habit for the proposed time period, they will recieve their stake back (we hope to build a feature into this so that compound interest can be built up over time for long term goals). If they do not stick to the habit, they will loose their stake. As we have built this on blockchain technology, other users are able to dispute if someone has not stuck to a habit. 
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+Chained Habits can be deployed locally: 
 
-## Documentation
-
-https://book.getfoundry.sh/
-
-## Usage
-
-### Build
-
-```shell
-$ forge build
-```
-
-### Test
-
-```shell
-$ forge test
-```
-
-### Format
-
-```shell
-$ forge fmt
-```
-
-### Gas Snapshots
-
-```shell
-$ forge snapshot
-```
-
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+- Launch the app and create a new file for which you would like your progress to be tracked.
+- The option to connect your wallet will also appear, enter your wallet address in the "dApp address" box
+- Once you make a change to your document, a message will appear showing the numbers of changed characters.
